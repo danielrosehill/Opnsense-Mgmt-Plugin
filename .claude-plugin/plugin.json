@@ -1,0 +1,13 @@
+{
+  "name": "opnsense-mgmt",
+  "version": "1.0.0",
+  "description": "Manage an OPNsense router/firewall via SSH and the OPNsense API — guided first-run onboarding, firewall rule inspection, network debugging, and host/log diagnostics. Per-host config is stored outside the plugin so the same install works across multiple environments.",
+  "author": {
+    "name": "Daniel Rosehill",
+    "email": "public@danielrosehill.com",
+    "url": "https://danielrosehill.com"
+  },
+  "repository": "https://github.com/danielrosehill/Opnsense-Mgmt-Plugin",
+  "license": "MIT",
+  "keywords": ["opnsense", "firewall", "network", "router", "homelab", "sysadmin"]
+}
