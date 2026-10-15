@@ -9,7 +9,7 @@ Establish the persistent connection profile for an OPNsense host. The same plugi
 
 ## Workspace resolution
 
-Resolve the plugin's data directory as `$CLAUDE_USER_DATA/opnsense-mgmt/` if `CLAUDE_USER_DATA` is set; otherwise `$XDG_DATA_HOME/claude-plugins/opnsense-mgmt/` if `XDG_DATA_HOME` is set; otherwise `~/.local/share/claude-plugins/opnsense-mgmt/`. Create the directory if it doesn't exist. See the canonical convention in the `claude-rudder:plugin-data-storage` skill.
+Resolve the plugin's data directory as `$CLAUDE_USER_DATA/opnsense-mgmt/` if `CLAUDE_USER_DATA` is set; otherwise `$XDG_DATA_HOME/claude-plugins/opnsense-mgmt/` if `XDG_DATA_HOME` is set; otherwise `~/.local/share/claude-plugins/opnsense-mgmt/`. Create the directory if it doesn't exist. See the canonical convention in the `rudder:plugin-data-storage` skill.
 
 Shell form:
 
