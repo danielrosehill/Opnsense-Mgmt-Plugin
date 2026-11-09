@@ -47,10 +47,10 @@ The config file is `$PLUGIN_DATA_DIR/config.json`.
 3. **Test connectivity** (best-effort, don't block on failure):
 
    ```bash
-   ssh -o ConnectTimeout=5 -o BatchMode=yes -p "$SSH_PORT" "$SSH_USER@$HOST" "uname -a" 2>&1
+   ssh -o ConnectTimeout=5 -o BatchMode=yes -p "$SSH_PORT" "$SSH_USER@$HOST" "opnsense-version; uname -a" 2>&1
    ```
 
-   If the command fails, surface the error to the user but still write the config — they may want to fix SSH separately.
+   `opnsense-version` prints the exact OPNsense release (e.g. `26.7.8_2`). If it is older than 26.7, tell the user the `opnsense-maintenance` endpoint names and log paths may not match. If the command fails, surface the error to the user but still write the config — they may want to fix SSH separately.
 
 4. **Write** `$PLUGIN_DATA_DIR/config.json` with this schema (pretty-printed, 2-space indent):
 
