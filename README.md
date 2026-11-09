@@ -4,6 +4,10 @@ A Claude Code plugin for managing an [OPNsense](https://opnsense.org/) router/fi
 
 Per-host details (IP, SSH user, API credential references) are stored **outside the plugin** at `$CLAUDE_USER_DATA/opnsense-mgmt/config.json`, so the same install works against any number of OPNsense routers and survives plugin updates.
 
+## Compatibility
+
+Targets **OPNsense 26.7.x** ("Xenial Xenops", FreeBSD 15.1), reviewed against the 26.7.8 release notes. Older releases (25.x and below) differ in API endpoints, NAT and log handling; the skills check `opnsense-version` and warn accordingly.
+
 ## Skills
 
 - `onboard` — interactive first-run setup. Captures host, SSH user, SSH key path, web URL, and (optionally) OPNsense API credential references. Writes `config.json`.
